@@ -7,7 +7,6 @@ body {
     line-height: 1.6;
 }
 
-
 header {
     background-color: #0D47A1;
     padding: 1rem;
@@ -36,7 +35,6 @@ nav ul {
     justify-content: space-around;
 }
 
-
 nav a {
     color: #fff;
     text-decoration: none;
@@ -52,11 +50,17 @@ nav a:hover {
     border-radius: 5px;
 }
 
-
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.content-container {
+    display: flex;
+    /* Utiliza flexbox para las columnas */
+    gap: 2rem;
+    /* Espacio entre el aside y la sección */
 }
 
 .card {
@@ -65,6 +69,8 @@ main {
     border-radius: 5px;
     padding: 2rem;
     margin-bottom: 1.5rem;
+    flex: 1;
+    /* Permite que la tarjeta principal ocupe el espacio disponible */
 }
 
 .card h2 {
@@ -85,13 +91,11 @@ main {
     height: auto;
 }
 
-main .cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-aside {
+aside.card {
+    width: 250px;
+    /* Ancho fijo para el aside */
+    flex-shrink: 0;
+    /* Evita que el aside se reduzca de tamaño */
     background-color: #f0f0f0;
     padding: 1.5rem;
     border-left: 4px solid #0D47A1;
