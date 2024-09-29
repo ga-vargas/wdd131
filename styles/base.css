@@ -73,6 +73,18 @@ main {
     margin-bottom: 1rem;
 }
 
+.profile-pic {
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+}
+
+.mendoza-pic {
+    border-radius: 0;
+    width: 400px;
+    height: auto;
+}
+
 main .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
