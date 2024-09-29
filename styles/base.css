@@ -58,9 +58,7 @@ main {
 
 .content-container {
     display: flex;
-    /* Utiliza flexbox para las columnas */
     gap: 2rem;
-    /* Espacio entre el aside y la sección */
 }
 
 .card {
@@ -70,7 +68,6 @@ main {
     padding: 2rem;
     margin-bottom: 1.5rem;
     flex: 1;
-    /* Permite que la tarjeta principal ocupe el espacio disponible */
 }
 
 .card h2 {
@@ -93,9 +90,7 @@ main {
 
 aside.card {
     width: 250px;
-    /* Ancho fijo para el aside */
     flex-shrink: 0;
-    /* Evita que el aside se reduzca de tamaño */
     background-color: #f0f0f0;
     padding: 1.5rem;
     border-left: 4px solid #0D47A1;
