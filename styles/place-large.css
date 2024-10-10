@@ -1,15 +1,15 @@
 @media (min-width: 768px) {
 
-
     header {
         padding: 1.8rem;
         text-align: center;
         background-color: var(--primary-color);
-        color: white;
+        color: var(--secondary-color);
     }
 
     h1 {
         font-size: 3rem;
+        color: var(--secondary-color);
     }
 
     .hero-container {
@@ -51,8 +51,8 @@
 
     .data-section h2,
     .weather-section h2 {
-        background-color: var(--primary-color);
-        color: white;
+        background-color: var(--highlight-color);
+        color: var(--text-color);
         padding: 0.5rem 1rem;
         margin: 0;
         text-align: left;
@@ -90,10 +90,16 @@
 
     footer {
         background-color: var(--primary-color);
-        color: white;
+        color: var(--secondary-color);
         padding: 1rem;
         text-align: center;
         position: relative;
         z-index: 2;
+    }
+
+    h1::after {
+        content: '🇦🇷';
+        margin-left: 10px;
+        font-size: 1.5rem;
     }
 }
