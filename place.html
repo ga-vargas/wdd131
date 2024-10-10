@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about Buenos Aires">
+    <meta name="author" content="Germán Vargas">
+    <title>Buenos Aires</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Buenos Aires</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture class="hero-picture">
+                <source media="(min-width: 768px)" srcset="images/picture.webp">
+                <img src="images/buenos-aires-argentina-mobile.webp" alt="Buenos Aires Argentina" class="hero-image">
+            </picture>
+        </div>
+
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 78.10 mi²</li>
+                <li><strong>Population:</strong> 3,121,287</li>
+                <li><strong>Capital:</strong> Buenos Aires</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> Argentine Peso</li>
+                <li><strong>Time Zone:</strong> UTC-3</li>
+                <li><strong>Calling Code:</strong> +54</li>
+                <li><strong>Internet TLD:</strong> .ar</li>
+            </ul>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather
+                <span class="weather-icon-large">⛅</span>
+            </h2>
+            <div class="weather-icon">
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> 10°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2024 Germán Vargas, Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
