@@ -74,8 +74,8 @@ const temples = [
 function displayTemples(temples) {
     const container = document.getElementById('templesContainer');
     container.innerHTML = '';
-    temples.forEach(temple => {
 
+    temples.forEach(temple => {
         const card = document.createElement('div');
         card.classList.add('temple-card');
 
@@ -105,24 +105,30 @@ function displayTemples(temples) {
         container.appendChild(card);
     });
 }
-
 function filterTemples(filter) {
     let filteredTemples;
 
+    const h2 = document.querySelector('main h2');
+
     switch (filter) {
         case 'old':
+            h2.textContent = 'Old';
             filteredTemples = temples.filter(temple => parseInt(temple.dedicated.split(', ')[0]) < 1900);
             break;
         case 'new':
+            h2.textContent = 'New';
             filteredTemples = temples.filter(temple => parseInt(temple.dedicated.split(', ')[0]) >= 2000);
             break;
         case 'large':
+            h2.textContent = 'Large';
             filteredTemples = temples.filter(temple => temple.area > 90000);
             break;
         case 'small':
+            h2.textContent = 'Small';
             filteredTemples = temples.filter(temple => temple.area < 10000);
             break;
         default:
+            h2.textContent = 'Home';
             filteredTemples = temples;
     }
 
