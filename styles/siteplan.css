@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F9;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2C3E50;
+}
+
+button {
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section {
+    background-color: #ECF0F1;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+section h2,
+section p,
+section ul {
+    color: #333;
+}
+
+button:hover {
+    background-color: #7F8C8D;
+}
