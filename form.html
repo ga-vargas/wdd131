@@ -21,13 +21,13 @@
     </header>
 
     <form action="review.html" method="get">
-        <label for="product">Product Name:</label>
+        <label for="product">Product Name: <span class="required">*</span></label>
         <select id="product" name="product" required>
             <option value="" disabled selected>Select a Product ...</option>
         </select>
 
         <fieldset>
-            <legend>Overall Rating:</legend>
+            <legend>Overall Rating: <span class="required">*</span></legend>
             <div class="rating-stars">
                 <input type="radio" id="rating-1" name="rating" value="1" required>
                 <label for="rating-1">★</label>
@@ -46,7 +46,7 @@
             </div>
         </fieldset>
 
-        <label for="installation-date">Date of Installation:</label>
+        <label for="installation-date">Date of Installation: <span class="required">*</span></label>
         <input type="text" id="installation-date" name="installation-date" placeholder="mm/dd/yyyy" required>
 
         <fieldset>
