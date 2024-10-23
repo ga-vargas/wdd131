@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
+    <meta name="description"
+        content="This page allows users to submit a product review and track reviews using localStorage.">
+    <meta name="author" content="Germán Vargas">
 
     <link rel="stylesheet" href="styles/form.css">
-
-
     <link rel="stylesheet" href="styles/form-large.css" media="(min-width: 1024px)">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
@@ -47,7 +47,7 @@
         </fieldset>
 
         <label for="installation-date">Date of Installation: <span class="required">*</span></label>
-        <input type="text" id="installation-date" name="installation-date" placeholder="mm/dd/yyyy" required>
+        <input type="date" id="installation-date" name="installation-date" required>
 
         <fieldset>
             <legend>Which features did you find useful in the product? <br><small>(Check all that apply)</small>
@@ -80,7 +80,8 @@
         <label for="user-name">Your Name (optional):</label>
         <input type="text" id="user-name" name="user-name">
 
-        <input type="submit" value="Submit Review">
+        <input type="submit" value="Submit">
+
     </form>
 
     <footer>
