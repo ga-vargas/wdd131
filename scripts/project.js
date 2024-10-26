@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mostrar la última fecha de modificación en el footer
     const lastModifiedElement = document.getElementById('last-modified');
     if (lastModifiedElement) {
         lastModifiedElement.textContent = document.lastModified;
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalImage = document.getElementById('modal-image');
     const modalMap = document.getElementById('modal-map');
 
-    // Función para abrir el modal con la información específica del lugar
     function openModal(place) {
         let info;
         let imageUrl;
@@ -69,41 +67,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 mapUrl = '';
         }
 
-        // Configurar el título, descripción, imagen y mapa en el modal
         modalTitle.textContent = place;
         modalDescription.textContent = info;
         modalImage.src = imageUrl;
         modalMap.src = mapUrl;
 
-        // Mostrar el modal
         modal.style.display = 'block';
     }
 
-    // Función para cerrar el modal
     function closeModal() {
         modal.style.display = 'none';
     }
 
-    // Asignar eventos de clic a cada elemento de región en explore.html
     const regionElements = document.querySelectorAll('.explore-region');
     regionElements.forEach(regionElement => {
         const placeName = regionElement.querySelector('h3').textContent;
         regionElement.addEventListener('click', () => openModal(placeName));
     });
 
-    // Asignar evento de cierre al botón de cierre en el modal
     document.querySelector('.close').addEventListener('click', closeModal);
 });
 
-// Código para manejar el envío del formulario de contacto y redirigir a submit.html
 document.addEventListener('DOMContentLoaded', () => {
-    // Selecciona el formulario de contacto
     const contactForm = document.getElementById('contact-form');
 
-    // Escucha el evento de envío del formulario
     contactForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Evita el envío real del formulario
-        window.location.href = 'submit.html'; // Redirige al usuario a submit.html
+        event.preventDefault();
+        window.location.href = 'submit.html';
     });
 });
 

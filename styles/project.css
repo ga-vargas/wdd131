@@ -1,18 +1,15 @@
-/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ECF0F1;
     color: #2C3E50;
 }
 
-/* Header */
 header {
     display: flex;
     align-items: center;
@@ -42,14 +39,12 @@ nav ul li a {
     font-size: 1rem;
 }
 
-/* Tipografía */
 h1,
 h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-/* Secciones */
 .intro,
 .why-visit,
 .contact {
@@ -60,7 +55,6 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección de datos del país */
 .country-data {
     display: flex;
     flex-direction: column;
@@ -110,7 +104,6 @@ h2 {
     color: #2C3E50;
 }
 
-/* Ajustes de la sección de "Why You Should Visit Argentina" */
 .reasons {
     display: flex;
     flex-direction: row;
@@ -140,7 +133,6 @@ h2 {
     max-width: 90%;
 }
 
-/* Formulario de contacto */
 .contact form {
     display: flex;
     flex-direction: column;
@@ -174,7 +166,6 @@ h2 {
     background-color: #34495E;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
@@ -183,9 +174,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Estilos específicos para explore.html --- */
-
-/* Cuadrícula de regiones */
 .explore-regions-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -211,7 +199,6 @@ footer {
     width: 100%;
     height: auto;
     aspect-ratio: 3/2;
-    /* Mantiene proporciones y previene saltos de layout */
 }
 
 .explore-region h3 {
@@ -226,7 +213,6 @@ footer {
     color: #34495E;
 }
 
-/* --- Estilos para la ventana modal --- */
 .modal {
     display: none;
     position: fixed;
@@ -298,7 +284,6 @@ footer {
     color: black;
 }
 
-/* --- Estilos específicos para tips.html --- */
 .tips-intro {
     text-align: center;
     margin: 2rem 0;

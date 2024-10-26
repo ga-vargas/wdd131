@@ -1,17 +1,14 @@
 @media (min-width: 768px) {
 
-    /* Body centrado en pantallas grandes */
     body {
         max-width: 1200px;
         margin: 0 auto;
     }
 
-    /* Header con logotipo más grande */
     .logo {
         width: 70px;
     }
 
-    /* Navegación horizontal */
     nav ul {
         flex-direction: row;
         gap: 20px;
@@ -21,7 +18,6 @@
         font-size: 1.1rem;
     }
 
-    /* Ajustes de texto */
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -32,7 +28,6 @@
         margin-bottom: 0.8rem;
     }
 
-    /* Sección de datos del país */
     .country-data {
         flex-direction: row;
         align-items: flex-start;
@@ -40,12 +35,10 @@
         text-align: left;
     }
 
-    /* Ajuste de ancho máximo para la caja de información */
     .info-box {
         max-width: 250px;
     }
 
-    /* Sección "Why You Should Visit Argentina" en filas */
     .reasons {
         flex-direction: row;
         justify-content: space-around;
@@ -56,7 +49,6 @@
         text-align: center;
     }
 
-    /* Formulario centrado */
     .contact form {
         max-width: 500px;
         margin: 0 auto;
@@ -66,9 +58,6 @@
         width: auto;
     }
 
-    /* --- Estilos específicos para explore.html en pantallas grandes --- */
-
-    /* Cuadrícula de regiones */
     .explore-regions-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
@@ -84,8 +73,6 @@
         font-size: 1rem;
         line-height: 1.6;
     }
-
-    /* --- Estilos para la ventana modal en pantallas grandes --- */
 
     .modal-content {
         width: 60%;
@@ -120,9 +107,6 @@
         font-size: 1.5rem;
     }
 
-    /* --- Estilos específicos para tips.html en pantallas grandes --- */
-
-    /* Cuadrícula de tips */
     .tips-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -145,7 +129,6 @@
         line-height: 1.7;
     }
 
-    /* Ajuste de la sección more-info en tips.html */
     .more-info {
         max-width: 800px;
         margin: 0 auto;
