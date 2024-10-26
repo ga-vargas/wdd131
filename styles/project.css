@@ -210,6 +210,8 @@ footer {
 .explore-region img {
     width: 100%;
     height: auto;
+    aspect-ratio: 3/2;
+    /* Mantiene proporciones y previene saltos de layout */
 }
 
 .explore-region h3 {
