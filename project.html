@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Argentina - Home</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 768px)">
+</head>
+
+<body>
+    <header>
+        <img src="images/argentinaflag.svg" alt="Argentina Flag" class="logo">
+        <nav>
+            <ul>
+                <li><a href="project.html">Home Page</a></li>
+                <li><a href="explore.html">Explore Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to Argentina</h2>
+            <div class="country-data">
+                <div class="info-box">
+                    <h3>Argentina Facts</h3>
+                    <ul>
+                        <li><strong>Capital:</strong> Buenos Aires</li>
+                        <li><strong>Population:</strong> ~45 million</li>
+                        <li><strong>Language:</strong> Spanish</li>
+                        <li><strong>Currency:</strong> Argentine Peso (ARS)</li>
+                        <li><strong>Area:</strong> 2.78 million km²</li>
+                    </ul>
+                </div>
+                <p>Argentina is a land of vast landscapes, diverse culture, and unique attractions. From the majestic
+                    peaks of the Andes Mountains to the vibrant streets of Buenos Aires, this country offers a wide
+                    variety of experiences. Whether you're interested in outdoor adventures, cultural explorations, or
+                    simply soaking in beautiful scenery, Argentina has something for everyone. Discover the warmth and
+                    hospitality of its people, the unique traditions and customs, and the awe-inspiring natural wonders
+                    that make Argentina a must-visit destination in South America.</p>
+            </div>
+        </section>
+
+        <section class="why-visit">
+            <h2>Why You Should Visit Argentina:</h2>
+            <div class="reasons">
+                <div class="reason">
+                    <img src="images/city-buenos-aires.jpg" alt="City of Buenos Aires">
+                    <p><strong>Relevant fact #1:</strong> Explore the vibrant culture and iconic landmarks of Buenos
+                        Aires, Argentina's bustling capital.</p>
+                </div>
+                <div class="reason">
+                    <img src="images/ushuaia-argentina.jpg" alt="Ushuaia, Argentina">
+                    <p><strong>Relevant fact #2:</strong> Discover Ushuaia, the southernmost city in the world, located
+                        in Tierra del Fuego.</p>
+                </div>
+                <div class="reason">
+                    <img src="images/aconcagua.jpg" alt="Mount Aconcagua">
+                    <p><strong>Relevant fact #3:</strong> Experience the Andes and Mount Aconcagua, the highest peak in
+                        the Americas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <form id="contact-form" action="submit.html" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ask your question here:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="consent" name="consent">
+                    <label for="consent">I agree to be contacted to receive further information.</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Germán Vargas, Mendoza Argentina</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/project.js"></script>
+    <script>
+        // Mostrar la última fecha de modificación
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

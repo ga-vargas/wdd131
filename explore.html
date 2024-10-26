@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Argentina - Explore Destinations</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css" media="screen and (min-width: 768px)">
+</head>
+
+<body>
+    <header>
+        <h1>Explore Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="explore.html">Explore Destinations</a></li>
+                <li><a href="tips.html">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="explore-regions-grid">
+            <div class="explore-region" onclick="openModal('Buenos Aires')">
+                <img src="images/caba.jpg" alt="Buenos Aires">
+                <h3>Buenos Aires</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Cataratas del Iguazú')">
+                <img src="images/iguazu.jpg" alt="Cataratas del Iguazú">
+                <h3>Iguazú Falls</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Mendoza')">
+                <img src="images/mendoza-road.jpg" alt="Mendoza">
+                <h3>Mendoza</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Glaciar Perito Moreno')">
+                <img src="images/perito-moreno.jpg" alt="Glaciar Perito Moreno">
+                <h3>Perito Moreno Glacier</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Cerro Aconcagua')">
+                <img src="images/aconcagua-visit.jpg" alt="Cerro Aconcagua">
+                <h3>Mount Aconcagua</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Bariloche')">
+                <img src="images/bariloche.jpg" alt="Bariloche">
+                <h3>Bariloche</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Ushuaia')">
+                <img src="images/ushuaia-visit.jpg" alt="Ushuaia">
+                <h3>Ushuaia</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Cerro de los Siete Colores')">
+                <img src="images/siete-colores.jpg" alt="Cerro de los Siete Colores">
+                <h3>The Hill of Seven</h3>
+            </div>
+            <div class="explore-region" onclick="openModal('Cerro Fitz Roy')">
+                <img src="images/fitz-roy.jpg" alt="Cerro Fitz Roy">
+                <h3>Mount Fitz Roy</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title">Place Name</h2>
+            <p id="modal-description">Place description goes here.</p>
+            <img id="modal-image" src="" alt="Place Image" class="modal-image">
+
+            <!-- Contenedor para el mapa pequeño -->
+            <div class="map-container">
+                <iframe id="modal-map" src="" title="Google Map"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/project.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Germán Vargas, Mendoza Argentina</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar la última fecha de modificación
+        document.getElementById("last-modified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
